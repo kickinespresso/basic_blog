@@ -2,6 +2,8 @@ require_dependency "basic_blog/application_controller"
 
 module BasicBlog
   class PostsController < ApplicationController
+
+    before_action :authenticate_user!, only: [:new, :edit, :update, :create, :destroy]
     before_action :set_post, only: [:show, :edit, :update, :destroy]
 
     # GET /posts
