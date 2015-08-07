@@ -57,7 +57,7 @@ module BasicBlog
 
       # Only allow a trusted parameter "white list" through.
       def post_params
-        params.require(:post).permit(:title, :content,:excerpt, :published_at)
+        params.require(:post).permit(:title, :content,:excerpt,:tag_list, :published_at)
       end
   end
 end

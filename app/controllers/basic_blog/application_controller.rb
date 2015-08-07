@@ -1,6 +1,7 @@
 module BasicBlog
   class ApplicationController < ActionController::Base
 
+    layout 'layouts/application'
     if BasicBlog.user_class_symbol != :user && !respond_to(:current_user)
       helper_method :authenticate_user!
       helper_method :current_user
