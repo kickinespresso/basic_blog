@@ -23,9 +23,11 @@ Gem::Specification.new do |s|
   s.add_dependency "kaminari", ">= 0.15"
   s.add_dependency 'bootstrap-sass', '~> 3.3.4'
   s.add_dependency 'sass-rails', '~> 5.0'
-  s.add_dependency 'ckeditor_rails', '~> 4.5.1'
   s.add_dependency "jquery-rails", ">= 3.0"
   s.add_dependency "jquery-ui-rails", "~> 5.0"
+  #s.add_dependency 'ckeditor_rails', '~> 4.5.1'
+  s.add_dependency 'ckeditor','~> 4.1.3'
+
   #s.add_dependency 'therubyracer', platforms: :ruby
   s.add_dependency  'acts-as-taggable-on', '~> 3.4'
 

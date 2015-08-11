@@ -3,7 +3,8 @@ require 'friendly_id'
 require 'simple_form'
 require 'jquery-rails'
 require 'jquery-ui-rails'
-require 'ckeditor-rails'
+#require 'ckeditor-rails'
+require 'ckeditor'
 require 'acts-as-taggable-on'
 
 module BasicBlog
