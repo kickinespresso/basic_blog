@@ -1,1 +1,1 @@
-Rails.application.config.assets.precompile += %w( basic_blog/posts.js )
+Rails.application.config.assets.precompile += %w( basic_blog/application.js basic_blog/posts.js )
