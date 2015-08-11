@@ -29,5 +29,8 @@ Gem::Specification.new do |s|
   #s.add_dependency 'therubyracer', platforms: :ruby
   s.add_dependency  'acts-as-taggable-on', '~> 3.4'
 
+  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency "factory_girl_rails"
   s.add_development_dependency "sqlite3"
+  s.add_development_dependency "database_cleaner"
 end
