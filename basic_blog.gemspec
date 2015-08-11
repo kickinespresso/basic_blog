@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = BasicBlog::VERSION
   s.authors     = ["Chris Desch"]
   s.email       = ["cdesch@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of BasicBlog."
-  s.description = "TODO: Description of BasicBlog."
+  s.homepage    = "KickinEspresso.com"
+  s.summary     = "A Basic Blog Engine for Rails Apps"
+  s.description = "A Drop In Customizable Blog Engine for Rails Apps"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
