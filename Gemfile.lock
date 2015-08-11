@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    basic_blog (0.0.1)
+    basic_blog (0.0.2)
       acts-as-taggable-on (~> 3.4)
       bootstrap-sass (~> 3.3.4)
       ckeditor_rails (~> 4.5.1)

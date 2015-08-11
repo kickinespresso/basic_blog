@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = BasicBlog::VERSION
   s.authors     = ["Chris Desch"]
   s.email       = ["cdesch@gmail.com"]
-  s.homepage    = "KickinEspresso.com"
+  s.homepage    = "https://www.KickinEspresso.com"
   s.summary     = "A Basic Blog Engine for Rails Apps"
   s.description = "A Drop In Customizable Blog Engine for Rails Apps"
   s.license     = "MIT"
