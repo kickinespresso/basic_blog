@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "A Drop In Customizable Blog Engine for Rails Apps"
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.MD"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.2.3"
@@ -23,8 +23,8 @@ Gem::Specification.new do |s|
   s.add_dependency "kaminari", ">= 0.15"
   s.add_dependency 'bootstrap-sass', '~> 3.3.4'
   s.add_dependency 'sass-rails', '~> 5.0'
-  s.add_dependency "jquery-rails", ">= 3.0"
-  s.add_dependency "jquery-ui-rails", "~> 5.0"
+  s.add_dependency "jquery-rails", "~> 4.0.4"
+  s.add_dependency "jquery-ui-rails", "~> 5.0.5"
   #s.add_dependency 'ckeditor_rails', '~> 4.5.1'
   s.add_dependency 'ckeditor','~> 4.1.3'
 
