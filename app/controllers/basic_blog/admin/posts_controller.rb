@@ -26,7 +26,10 @@ module BasicBlog
 
       # POST /posts
       def create
+
+
         @post = Post.new(post_params)
+        @post.set_published!
 
         if @post.save
           redirect_to @post, notice: 'Post was successfully created.'
@@ -58,7 +61,7 @@ module BasicBlog
 
       # Only allow a trusted parameter "white list" through.
       def post_params
-        params.require(:post).permit(:title, :content,:excerpt,:tag_list, :published_at)
+        params.require(:post).permit(:title, :content,:excerpt,:tag_list, :published_at, :published_at_date, :published_at_time)
       end
     end
   end

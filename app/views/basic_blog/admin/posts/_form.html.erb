@@ -1,41 +1,11 @@
-<%= form_for(['admin', @post]) do |f| %>
-  <% if @post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
-      <ul>
-      <% @post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= simple_form_for(['admin', @post]) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :excerpt %>
+    <%= f.input :tag_list %>
+    <%= f.input :content, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} } %>
+    <%= f.input :published_at, as: :date_time_picker, label: "Publish Date/Time", input_html: { style: "display: inline;" } %>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </div>
-    <div class="field">
-      <%= f.label :excerpt %><br>
-      <%= f.text_area :excerpt %>
-    </div>
-    <div class="field">
-      <p>Tag List</p>
-      <%= f.text_field :tag_list %>
-    </div>
+    <%= f.button :submit %>
 
-
-  <div class="field">
-    <%= f.label :content %><br>
-    <%= f.cktext_area :content  %>
-  </div>
-  <div class="field">
-    <%= f.label :published_at %><br>
-    <span class="glyphicon glyphicon-calendar"> </span>
-    <%= f.text_field :published_at, class: :datepicker, label: "Publish Date/Time", input_html: { style: "display: inline;" } %>
-
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>

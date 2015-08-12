@@ -4,6 +4,7 @@ module BasicBlog
   class PostsController < ApplicationController
 
     before_action :set_post, only: [:show]
+    before_action :set_recent_posts,  only: [:index, :show]
 
     # GET /posts
     def index
@@ -18,6 +19,10 @@ module BasicBlog
       # Use callbacks to share common setup or constraints between actions.
       def set_post
         @post = Post.find(params[:id])
+      end
+
+      def set_recent_posts
+        @recent_posts = Post.published.order("published_at DESC").limit(6)
       end
   end
 end

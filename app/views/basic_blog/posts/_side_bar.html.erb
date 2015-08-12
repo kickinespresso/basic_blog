@@ -1,0 +1,9 @@
+<div class="col-md-2">
+
+  <ul>
+  <% @recent_posts.each do |recent_post| %>
+    <li><%= link_to recent_post.title, recent_post %></li>
+    <% end %>
+  </ul>
+
+</div>

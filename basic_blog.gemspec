@@ -27,7 +27,6 @@ Gem::Specification.new do |s|
   s.add_dependency "jquery-ui-rails", "~> 5.0.5"
   #s.add_dependency 'ckeditor_rails', '~> 4.5.1'
   s.add_dependency 'ckeditor','~> 4.1.3'
-
   #s.add_dependency 'therubyracer', platforms: :ruby
   s.add_dependency  'acts-as-taggable-on', '~> 3.4'
 
