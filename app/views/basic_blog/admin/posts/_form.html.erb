@@ -31,7 +31,8 @@
   </div>
   <div class="field">
     <%= f.label :published_at %><br>
-    <%= f.datetime_select :published_at %>
+    <%= f.datetime_select :published_at, as: :date_time_picker, label: "Publish Date/Time", input_html: { style: "display: inline;" } %>
+
   </div>
   <div class="actions">
     <%= f.submit %>

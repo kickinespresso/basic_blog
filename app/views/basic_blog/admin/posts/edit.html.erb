@@ -1,8 +1,17 @@
-<h1>Editing Post</h1>
+<div class="container">
 
-<%= render 'form' %>
+  <div class="row">
+    <div class="col-md-8">
+      <h1>Editing Post</h1>
 
-<%= link_to 'Show', @post %> |
-<%= link_to 'Back', admin_posts_path %>
+      <%= render 'form' %>
 
-<%= javascript_include_tag "basic_blog/posts" %>
+      <%= link_to 'Show', @post %> |
+      <%= link_to 'Back', admin_posts_path %>
+
+      <%= javascript_include_tag "basic_blog/posts" %>
+    </div>
+  </div>
+</div>
+
+

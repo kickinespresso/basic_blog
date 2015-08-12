@@ -13,6 +13,14 @@
 //= require_self
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui/core
+//= require jquery-ui/datepicker
+//= require jquery-ui/position
+//= require jquery-ui/widget
+//= require jquery-ui/resizable
+//= require jquery-ui/sortable
+//= require jquery.ui.timepicker
 //= require ckeditor/init
+
 
 

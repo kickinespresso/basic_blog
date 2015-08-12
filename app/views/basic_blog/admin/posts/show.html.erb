@@ -1,24 +1,34 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<div class="container">
 
-<p>
-  <strong>Excerpt:</strong>
-  <%= @post.excerpt %>
-</p>
+  <div class="row">
+    <div class="col-md-8">
+      <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
+      <p>
+        <strong>Title:</strong>
+        <%= @post.title %>
+      </p>
 
-<p>
-  <strong>Published at:</strong>
-  <%= @post.published_at %>
-</p>
+      <p>
+        <strong>Excerpt:</strong>
+        <%= @post.excerpt %>
+      </p>
 
-<%= link_to 'Edit', edit_admin_post_path(@post) %> |
-<%= link_to 'Back', admin_posts_path %>
+      <p>
+        <strong>Content:</strong>
+        <%= @post.content %>
+      </p>
+
+      <p>
+        <strong>Published at:</strong>
+        <%= @post.published_at %>
+      </p>
+
+      <%= link_to 'Edit', edit_admin_post_path(@post) %> |
+      <%= link_to 'Back', admin_posts_path %>
+
+    </div>
+  </div>
+</div>
+
