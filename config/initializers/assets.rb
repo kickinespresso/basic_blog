@@ -1,1 +1,1 @@
-Rails.application.config.assets.precompile += %w( jquery_ujs.js basic_blog/application.js basic_blog/posts.js ckeditor/*  )
+Rails.application.config.assets.precompile += %w( jquery_ujs.js basic_blog/application.js basic_blog/posts.js ckeditor/* jquery basic_blog/jquery.ui.timepicker.js basic_blog/jquery.ui.timepicker.css   )

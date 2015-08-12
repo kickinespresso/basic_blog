@@ -20,6 +20,7 @@
 //= require jquery-ui/resizable
 //= require jquery-ui/sortable
 //= require jquery.ui.timepicker
+//= require jquery.iframe-transport.js
 //= require ckeditor/init
 
 
