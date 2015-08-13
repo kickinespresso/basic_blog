@@ -12,7 +12,6 @@
         <strong>Excerpt:</strong>
         <%= @post.excerpt %>
       </p>
-
       <p>
         <strong>Content:</strong>
         <%= @post.content.html_safe %>
@@ -27,7 +26,9 @@
       <%= link_to 'Back', posts_path %>
 
     </div>
+    <%= render partial: 'basic_blog/posts/side_bar' %>
   </div>
+
 </div>
 
 

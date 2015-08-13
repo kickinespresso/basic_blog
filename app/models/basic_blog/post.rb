@@ -5,7 +5,7 @@ module BasicBlog
     acts_as_taggable
     validates_presence_of :title
     scope :published, -> { where.not(:published_at => nil) }
-
+    paginates_per 2
     attr_accessor :published_at_date, :published_at_time
 
 

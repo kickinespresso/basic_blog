@@ -8,7 +8,7 @@ module BasicBlog
 
     # GET /posts
     def index
-      @posts = Post.all
+      @posts = Post.published.order("published_at DESC").page params[:page]
     end
 
     # GET /posts/1
