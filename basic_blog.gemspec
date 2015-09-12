@@ -7,7 +7,7 @@ require "basic_blog/version"
 Gem::Specification.new do |s|
   s.name        = "basic_blog"
   s.version     = BasicBlog::VERSION
-  s.authors     = ["Chris Desch"]
+  s.authors     = ["KickinEspresso"]
   s.email       = ["chris@kickinespresso.com"]
   s.homepage    = "https://www.KickinEspresso.com"
   s.summary     = "A Basic Blog Engine for Rails Apps"
@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
   s.add_dependency "jquery-ui-rails", "~> 5.0.5"
   s.add_dependency 'ckeditor','~> 4.1.3'
   s.add_dependency  'acts-as-taggable-on', '~> 3.4'
+  s.add_dependency  'activeadmin','~> 1.0.0.pre1'
 
   #dummy dependancies
   s.add_dependency "devise", ">= 3.5.2"
