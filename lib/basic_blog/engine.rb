@@ -9,6 +9,7 @@ module BasicBlog
     require 'jquery-ui-rails'
     require 'ckeditor'
     require 'acts-as-taggable-on'
+
     isolate_namespace BasicBlog
 
     config.generators do |g|
