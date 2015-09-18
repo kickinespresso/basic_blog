@@ -13,6 +13,9 @@ module BasicBlog
 
     # GET /posts/1
     def show
+      if @post.published_at.blank?
+        redirect_to root_path
+      end
     end
 
     private
