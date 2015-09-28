@@ -7,7 +7,7 @@ module BasicBlog
     scope :published, -> { where.not(:published_at => nil) }
     paginates_per 2
     attr_accessor :published_at_date, :published_at_time
-
+    mount_uploader :image, ImageUploader
 
     def set_published!
       if self.published_at_date || self.published_at_time
